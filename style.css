@@ -1,0 +1,169 @@
+/* 通用选择器 *，作用于所有元素 */
+* {
+  margin: 0;          /* 清除所有元素的默认外边距 */
+  padding: 0;         /* 清除所有元素的默认内边距 */
+  box-sizing: content-box; /* 让元素的 width 和 height 包含 padding 和 border，方便布局 */
+}
+
+
+.topbar{
+    position: fixed;    /* 将导航栏固定在浏览器窗口上，不随滚动条滚动 */
+    top: 0;             /* 固定位置在页面顶部 0px */
+    left: 0;            /* 固定位置在页面左侧 0px */
+    width: 100%;        /* 导航栏宽度占满整个屏幕宽度 */
+    padding: 5px 5px;  /* 导航栏左右内边距各20px */
+    background-color: white;
+}
+
+.topbar-box{
+ 
+    height: 150px;
+    width: 100%;        /* 导航栏宽度占满整个屏幕宽度 */
+    padding: 5px 5px;  /* 导航栏左右内边距各20px */
+    background-color: white;
+}
+
+.bartable{
+    padding: 10px 10px;
+    background-color: white;
+    
+}
+
+.logo{
+    padding: 0px 1px;
+    height: 30px;
+    width: 100px;
+
+   
+}
+
+.logo-text
+{
+    font-family: "宋体";
+    font-size: 25pt;
+    padding: 0px 5px;
+    white-space: nowrap;
+}
+#logo-img {
+    height: 30px;
+    width: 100px;
+    object-fit: cover;
+    display: block;
+    margin: auto;  /* 上下左右都居中 */
+}
+
+.keep-box-2
+{
+    width: 30px;
+    padding: 0px 5px;
+}
+.jump-to
+{   
+    width: 100px;
+    font-family:"幼圆";
+    font-size:  15pt;
+    padding: 5px 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+.keep-box
+{
+    width: 35%;
+}
+
+.tiptable{
+    
+    background-color: #C1F2FF;
+    height: 35px;
+    width: 100%;
+    
+
+}
+/* -----------------------------------------------------------------------------*/
+#main-content{
+    margin-top: 140px;
+    height: 180x;
+    width: 100%;
+}
+#sej-eshop-img{
+    margin-top: 50px;
+    animation: sej-eshop-img 1s ease 0s;
+}
+
+@keyframes sej-eshop-img {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* -----------------------------------------------------------------------------*/
+#advantage-table{
+    width: 100%;
+    
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#advantage-table-suportbox{
+    width: 25%;
+    
+    
+}
+#advantage-table-textbox{
+    padding: 5px 5px;
+    font-family: "幼圆";
+    font-size: 15pt;
+}
+/* -----------------------------------------------------------------------------*/
+#button-contain{
+    width: 100%;
+    margin-bottom: 200px;
+}
+.btn{
+    text-align: center;
+    font-size: 20pt;
+    height: 60x;
+    padding: 15px 10px;
+    font-family: "幼圆";
+    margin: 0px 0px;
+}
+#btn1{
+    background-color: rgb(91, 155, 213);
+    border-radius: 20px;
+    
+}
+#btn2{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(91, 155, 213);
+    border-radius: 20px;
+    
+}
+
+#button-table-supbox{
+    width: 30%;
+}
+#txt-buy{
+    
+    color: white;
+}
+
+#txt-plan{
+    
+    color: rgb(91, 155, 213);;
+}
+/*-----------------------------------------------------------------*/
+#p2-div{
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(to bottom, rgb(195, 233, 248), white);
+}
+#product-img{
+    width: 100%;
+    margin-top: 50px;
+}
