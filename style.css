@@ -6,6 +6,11 @@
 }
 
 
+a{
+    text-decoration: none;
+    color: inherit ;
+}
+
 .topbar{
     position: fixed;    /* 将导航栏固定在浏览器窗口上，不随滚动条滚动 */
     top: 0;             /* 固定位置在页面顶部 0px */
@@ -65,7 +70,14 @@
     padding: 5px 10px;
     white-space: nowrap;
     text-align: center;
+    transition: color 0.3s ease;
+
 }
+.jump-to:hover
+{
+    color: rgb(91, 155, 213);
+}
+
 .keep-box
 {
     width: 35%;
@@ -132,7 +144,16 @@
     padding: 15px 10px;
     font-family: "幼圆";
     margin: 0px 0px;
+    transition: 
+        color 0.3s ease, 
+        transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* 平滑曲线 */
 }
+
+.btn:hover{
+    transform: scale(1.2); /* 放大20% */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
 #btn1{
     background-color: rgb(91, 155, 213);
     border-radius: 20px;
